@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>DesireGallery :: Home</title>
+</head>
+<body>
+    <div id="header">
+        <h1><a href="/gallery/">DesireGallery</a></h1>
+    </div>
+    <div id="main">
+        {% for post in posts %}
+        <p><a href="/gallery/post/{{ post.pk }}/">{{ post.timestamp }}</a></p>
+        {% endfor %}
+    </div>
+</body>
+</html>
