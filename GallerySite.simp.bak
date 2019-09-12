@@ -1,0 +1,374 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<sim-project version="11.50" multi-file="no" uid="simp3b1ae37780774f29afe9a48267e67af3">
+  <meta>
+    <name>GallerySite</name>
+    <authors>Konstantin Babayets</authors>
+    <description />
+  </meta>
+  <counters models="1">
+    <entity-names>
+      <counter>
+        <item-type type-id="erd-entity" type="ErdEntity" />
+        <value>2</value>
+      </counter>
+      <counter>
+        <item-type type-id="expansion-table" type="ExpansionTable" />
+        <value>1</value>
+      </counter>
+      <counter>
+        <item-type type-id="ui-group-box" type="UIGroupBox" />
+        <value>1</value>
+      </counter>
+      <counter>
+        <item-type type-id="ui-tab-control" type="UITabControl" />
+        <value>1</value>
+      </counter>
+      <counter>
+        <item-type type-id="ui-area" type="UIArea" />
+        <value>3</value>
+      </counter>
+      <counter>
+        <item-type type-id="ui-search-box" type="UISearchBox" />
+        <value>1</value>
+      </counter>
+      <counter>
+        <item-type type-id="ui-titled-panel" type="UITitledPanel" />
+        <value>2</value>
+      </counter>
+      <counter>
+        <item-type type-id="ui-pager" type="UIPager" />
+        <value>1</value>
+      </counter>
+      <counter>
+        <item-type type-id="ui-grid" type="UIGrid" />
+        <value>1</value>
+      </counter>
+      <counter>
+        <item-type type-id="ui-radio-button" type="UIRadioButton" />
+        <value>1</value>
+      </counter>
+      <counter>
+        <item-type type-id="ui-text-box" type="UITextBox" />
+        <value>1</value>
+      </counter>
+    </entity-names>
+    <entity-ids>
+      <counter>
+        <item-type type-id="erd-entity" type="ErdEntity" />
+        <value>3</value>
+      </counter>
+      <counter>
+        <item-type type-id="erd-relationship" type="ErdRelation" />
+        <value>2</value>
+      </counter>
+      <counter>
+        <item-type type-id="expansion-table" type="ExpansionTable" />
+        <value>2</value>
+      </counter>
+      <counter>
+        <item-type type-id="ui-group-box" type="UIGroupBox" />
+        <value>2</value>
+      </counter>
+      <counter>
+        <item-type type-id="ui-tab-control" type="UITabControl" />
+        <value>2</value>
+      </counter>
+      <counter>
+        <item-type type-id="ui-area" type="UIArea" />
+        <value>4</value>
+      </counter>
+      <counter>
+        <item-type type-id="ui-search-box" type="UISearchBox" />
+        <value>2</value>
+      </counter>
+      <counter>
+        <item-type type-id="ui-titled-panel" type="UITitledPanel" />
+        <value>3</value>
+      </counter>
+      <counter>
+        <item-type type-id="ui-pager" type="UIPager" />
+        <value>2</value>
+      </counter>
+      <counter>
+        <item-type type-id="ui-grid" type="UIGrid" />
+        <value>2</value>
+      </counter>
+      <counter>
+        <item-type type-id="shape" type="AbstractShapeItem" />
+        <value>8</value>
+      </counter>
+      <counter>
+        <item-type type-id="universal-connector" type="UniversalConnector" />
+        <value>6</value>
+      </counter>
+      <counter>
+        <item-type type-id="ui-radio-button" type="UIRadioButton" />
+        <value>2</value>
+      </counter>
+      <counter>
+        <item-type type-id="ui-text-box" type="UITextBox" />
+        <value>2</value>
+      </counter>
+      <counter>
+        <item-type type-id="" type="AbstractElementGroup" />
+        <value>10</value>
+      </counter>
+    </entity-ids>
+    <diagrams>
+      <counter>
+        <type>SoftwareIdeasModeler.Core.Diagrams.Other.EntityRelationshipDiagram</type>
+        <value>1</value>
+      </counter>
+      <counter>
+        <type>SoftwareIdeasModeler.Core.Diagrams.Other.WebPageDiagram</type>
+        <value>2</value>
+      </counter>
+    </diagrams>
+    <fields>
+      <counter>
+        <type>SoftwareIdeasModeler.Core.DiagramItems.Erd.ErdEntityAttribute</type>
+        <value>11</value>
+      </counter>
+    </fields>
+  </counters>
+  <alias-groups />
+  <management uid="md-f55b3f581a1c41e8aece7f656d2c585e" name="" task-id-sequence="0">
+    <working-schedule uid="ws-1eb5185f356a40b3af089f9e9850395e" hours="8" monday="8" tuesday="8" wednesday="8" thursday="8" friday="8" saturday="0" sunday="0" />
+    <persons>
+      <person id="Pb2c707b0d15a434d8c67199696e33946">
+        <first-name>Константин</first-name>
+        <last-name>Бабаец</last-name>
+        <role />
+        <e-mail />
+        <phone-number />
+        <description />
+        <color>#00000000</color>
+        <working-schedule uid="ws-6bc1f496e4ec474285a86ed56eafe659" hours="8" monday="8" tuesday="8" wednesday="8" thursday="8" friday="8" saturday="0" sunday="0" />
+      </person>
+    </persons>
+    <teams />
+    <sprints />
+    <projects />
+    <modules />
+    <tasks />
+    <to-dos />
+  </management>
+  <glossary id="glsr-84cd1d1bf3cc43429f2fd37448659d92" />
+  <types default="UML">
+    <type-sets>
+      <type-set file="UmlTypes.xml" />
+    </type-sets>
+    <custom-types />
+  </types>
+  <items />
+  <models>
+    <model id="pfc3c17914ec94ebbb755b6550ee4c881_303464972" name="Model1" namespace="" order-index="1">
+      <meta>
+        <authors>
+          <author> </author>
+        </authors>
+        <description />
+        <creation-date>06/19/2018 20:04:43</creation-date>
+        <change-date>01/01/0001 00:00:00</change-date>
+        <revision-count>0</revision-count>
+        <version />
+      </meta>
+      <abstract-items />
+      <sub-models />
+      <diagram type="entity-relationship" id="p3020fa1b2c3245e7be5303a586a97317_516516918" name="DatabaseSchema" order-index="1" uid="" show-id="false" show-name="true" show-parent-name="false" name-style="local-auto-parents" show-stereotypes="true" show-tagged-values="false" show-template-parameters="true" show-fields="true" show-empty-compartments="true" show-special-indicators="false" show-attributes="true" show-attribute-visibility="true" show-operations="true" show-operation-parameters="true" show-operation-visibility="true" show-nullability="true" show-sequence-number="false" show-extension-points="false" show-relationship-texts="true" show-description="false" show-field-description="false" auto-routed-paths="false">
+        <style>
+          <background-color index="1" color="#FFFFFFFF" />
+          <background-color index="2" color="#FFFFFFFF" />
+          <background-type type="solid" />
+        </style>
+        <meta>
+          <authors>
+            <author> </author>
+          </authors>
+          <description />
+          <creation-date>06/19/2018 20:04:43</creation-date>
+          <change-date>06/19/2018 20:11:36</change-date>
+          <revision-count>0</revision-count>
+          <version />
+        </meta>
+        <abstract-items>
+          <item id="di526132257956631111" cid="ENT001" type="erd-entity" name="Post" style-class="" visibility="package" change-tracking-state="added" creator="Pb2c707b0d15a434d8c67199696e33946" creation-date="06/19/2018 20:04:49">
+            <style class="default" />
+            <entity description="" />
+            <attributes>
+              <attribute uid="a28ec712115ab45a0a80d97d0e2d7951d943" cid="ELEM002" name="id" type="Integer" type-id="Uml.Integer" type-size="" foreign-key="false" primary-key="true" nullable="false" description="" default-value="" auto-increment="true">
+                <style class="default" />
+              </attribute>
+              <attribute uid="a6c2c19122d2348b69961b218731668c023" cid="ELEM003" name="image" type="Object" type-id="Uml.Object" type-size="" foreign-key="false" primary-key="false" nullable="false" description="" default-value="" auto-increment="false">
+                <style class="default" />
+              </attribute>
+              <attribute uid="a9df022ce33894a8c8870742552b1ecec163" cid="ELEM004" name="date" type="DateTime" type-id="Uml.DateTime" type-size="" foreign-key="false" primary-key="false" nullable="false" description="" default-value="" auto-increment="false">
+                <style class="default" />
+              </attribute>
+              <attribute uid="a4021392ab73a4173bc6ef501514075a1801" cid="ELEM005" name="average_rating" type="Real" type-id="Uml.Real" type-size="" foreign-key="false" primary-key="false" nullable="false" description="" default-value="0" auto-increment="false">
+                <style class="default" />
+              </attribute>
+              <attribute uid="ae9ad74a10d3f4e228e5a71d15eecf5eb0" cid="ELEM006" name="votes_num" type="Integer" type-id="Uml.Integer" type-size="" foreign-key="false" primary-key="false" nullable="false" description="" default-value="0" auto-increment="false">
+                <style class="default" />
+              </attribute>
+            </attributes>
+            <indexes />
+          </item>
+          <item id="di637346176207890996" cid="ENT002" type="erd-entity" name="Comment" style-class="" visibility="package" change-tracking-state="added" creator="Pb2c707b0d15a434d8c67199696e33946" creation-date="06/19/2018 20:11:35">
+            <style class="default" />
+            <entity description="" />
+            <attributes>
+              <attribute uid="abe5b9e60547c43e280d636fed1ccdd38510" cid="ELEM007" name="id" type="Integer" type-id="Uml.Integer" type-size="" foreign-key="false" primary-key="true" nullable="false" description="" default-value="" auto-increment="true">
+                <style class="default" />
+              </attribute>
+              <attribute uid="a734e3b040cfe42ec9ea8bb0eea16ce98760" cid="ELEM008" name="comment_text" type="Char" type-id="Uml.Char" type-size="200" foreign-key="false" primary-key="false" nullable="false" description="" default-value="" auto-increment="false">
+                <style class="default" />
+              </attribute>
+              <attribute uid="ab610d9a5703141749b3f8b33f08e6506791" cid="ELEM009" name="date" type="DateTime" type-id="Uml.DateTime" type-size="" foreign-key="false" primary-key="false" nullable="false" description="" default-value="" auto-increment="false">
+                <style class="default" />
+              </attribute>
+              <attribute uid="a18b558817d724992b1c07798a6f9c40583" cid="ELEM010" name="post_id" type="Integer" type-id="Uml.Integer" type-size="" foreign-key="true" primary-key="false" nullable="false" description="" default-value="" auto-increment="false">
+                <style class="default" />
+              </attribute>
+            </attributes>
+            <indexes />
+          </item>
+          <item id="di762935764278636812" cid="REL001" type="erd-relationship" name="" style-class="" visibility="package" change-tracking-state="added" creator="Pb2c707b0d15a434d8c67199696e33946" creation-date="06/19/2018 20:11:35" from="di526132257956631111" to="di637346176207890996">
+            <style class="default" />
+            <erd-relation type="Identifying" multiplicity-from="1" multiplicity-to="*">
+              <attribute-pairs />
+            </erd-relation>
+          </item>
+        </abstract-items>
+        <layer id="a4d0e3b6a4704b519030f3a1459d379d" name="Default" visible="true" enabled="true" locked="false">
+          <item id="di526132257956631111" iid="fccf821ebb1e4e07a03fe7594e7a17b7" creation-date="06/19/2018 20:04:49" order-index="0" type="entity">
+            <layout ax="191" ay="88" awidth="255" aheight="160" x="191" y="88" width="255" height="160" />
+            <erd-entity show-nullability="true" />
+          </item>
+          <item id="di637346176207890996" iid="9cc5e0c8bea742b2821e36229a3717f8" creation-date="06/19/2018 20:11:35" order-index="1" type="entity">
+            <layout ax="546" ay="88" awidth="264" aheight="160" x="546" y="88" width="264" height="160" />
+            <erd-entity show-nullability="true" />
+          </item>
+          <item id="di762935764278636812" iid="b89b59bf27fe43b9b2319c65750b863c" creation-date="06/19/2018 20:11:35" order-index="2" type="relation">
+            <layout start-role-position="25,15" end-role-position="25,-15" line-style="oblique" lock-start-point="false" lock-end-point="false" lock-to-fields="false" auto-path="" x1="446" y1="168" x2="546" y2="168" start-border-pos="0.375" end-border-pos="0.875" name-position="0,0">
+              <points>
+                <point x="446" y="168" />
+                <point x="546" y="168" />
+              </points>
+            </layout>
+            <relation from="di526132257956631111" from-iid="fccf821ebb1e4e07a03fe7594e7a17b7" to="di637346176207890996" to-iid="9cc5e0c8bea742b2821e36229a3717f8" />
+          </item>
+        </layer>
+      </diagram>
+      <diagram type="web-page" id="pa044af0edeff410bad8950cb455e9c2f_598125432" name="HomePage" order-index="2" overview-order-index="0" uid="" show-id="false" show-name="true" show-parent-name="false" name-style="local-auto-parents" show-stereotypes="true" show-tagged-values="false" show-template-parameters="true" show-fields="true" show-empty-compartments="true" show-special-indicators="false" show-attributes="true" show-attribute-visibility="true" show-operations="true" show-operation-parameters="true" show-operation-visibility="true" show-nullability="true" show-sequence-number="false" show-extension-points="false" show-relationship-texts="true" show-description="false" show-field-description="false" auto-routed-paths="false">
+        <style>
+          <background-color index="1" color="#FFFFFFFF" />
+          <background-color index="2" color="#FFFFFFFF" />
+          <background-type type="solid" />
+        </style>
+        <meta>
+          <authors>
+            <author> </author>
+          </authors>
+          <description />
+          <creation-date>06/19/2018 20:13:57</creation-date>
+          <change-date>06/19/2018 20:17:43</change-date>
+          <revision-count>0</revision-count>
+          <version />
+        </meta>
+        <abstract-items>
+          <item id="di471891409422987252" cid="TP001" type="ui-titled-panel" name="DesireGallery" style-class="" visibility="package" change-tracking-state="added" creator="Pb2c707b0d15a434d8c67199696e33946" creation-date="06/19/2018 20:15:59">
+            <style class="default" />
+          </item>
+          <item id="di991645031889136162" cid="P001" type="ui-pager" name="Pagination" style-class="" owner="di471891409422987252" visibility="package" change-tracking-state="added" creator="Pb2c707b0d15a434d8c67199696e33946" creation-date="06/19/2018 20:16:42">
+            <style class="default" />
+            <pager show-previous-page="true" show-next-page="true" show-first-page="true" show-last-page="true" />
+          </item>
+          <item id="di267136959573254902" cid="ELEM002" type="ui-area" name="Image Table" style-class="" owner="di471891409422987252" visibility="package" change-tracking-state="added" creator="Pb2c707b0d15a434d8c67199696e33946" creation-date="06/19/2018 20:17:43">
+            <style class="default" />
+          </item>
+        </abstract-items>
+        <layer id="668ecf4f068d4b78b38bb58da529d93c" name="Default" visible="true" enabled="true" locked="false">
+          <item id="di471891409422987252" iid="28f174bcaec14111b3665475fcc97e43" creation-date="06/19/2018 20:15:59" order-index="0" type="ui-titled-panel">
+            <layout ax="200" ay="26" awidth="881" aheight="472" x="200" y="26" width="881" height="472" />
+          </item>
+          <item id="di991645031889136162" iid="2476d7762168440e93ee07f361bdc791" container="di471891409422987252" container-iid="28f174bcaec14111b3665475fcc97e43" creation-date="06/19/2018 20:16:42" order-index="1" type="ui-pager">
+            <layout ax="490.5" ay="468" awidth="300" aheight="30" x="490.5" y="468" width="300" height="30" />
+          </item>
+          <item id="di267136959573254902" iid="d28928286f664471a766694cedfb42ce" container="di471891409422987252" container-iid="28f174bcaec14111b3665475fcc97e43" creation-date="06/19/2018 20:17:43" order-index="2" type="ui-area">
+            <layout ax="273.5" ay="76" awidth="735" aheight="374" x="273.5" y="76" width="735" height="374" />
+          </item>
+        </layer>
+      </diagram>
+      <diagram type="web-page" id="pa028b77e56a4482fa05e7cedc62071c5_644709437" name="PostPage" order-index="3" overview-order-index="1" uid="" show-id="false" show-name="true" show-parent-name="false" name-style="local-auto-parents" show-stereotypes="true" show-tagged-values="false" show-template-parameters="true" show-fields="true" show-empty-compartments="true" show-special-indicators="false" show-attributes="true" show-attribute-visibility="true" show-operations="true" show-operation-parameters="true" show-operation-visibility="true" show-nullability="true" show-sequence-number="false" show-extension-points="false" show-relationship-texts="true" show-description="false" show-field-description="false" auto-routed-paths="false">
+        <style>
+          <background-color index="1" color="#FFFFFFFF" />
+          <background-color index="2" color="#FFFFFFFF" />
+          <background-type type="solid" />
+        </style>
+        <meta>
+          <authors>
+            <author> </author>
+          </authors>
+          <description />
+          <creation-date>06/19/2018 20:25:32</creation-date>
+          <change-date>06/19/2018 20:30:45</change-date>
+          <revision-count>0</revision-count>
+          <version />
+        </meta>
+        <abstract-items>
+          <item id="di752375482686154152" cid="TP002" type="ui-titled-panel" name="DesireGalleryPost" style-class="" visibility="package" change-tracking-state="added" creator="Pb2c707b0d15a434d8c67199696e33946" creation-date="06/19/2018 20:25:50">
+            <style class="default" />
+          </item>
+          <item id="di256511674631924097" cid="ELEM003" type="ui-area" name="Image" style-class="" owner="di752375482686154152" visibility="package" change-tracking-state="added" creator="Pb2c707b0d15a434d8c67199696e33946" creation-date="06/19/2018 20:26:49">
+            <style class="default" />
+          </item>
+          <item id="di991682879226640521" cid="TXT001" type="ui-text-box" name="Comment" style-class="" owner="di752375482686154152" visibility="package" change-tracking-state="added" creator="Pb2c707b0d15a434d8c67199696e33946" creation-date="06/19/2018 20:30:45">
+            <style class="default" />
+          </item>
+        </abstract-items>
+        <layer id="ba835ce031bc429681e2e9c8d84e8a30" name="Default" visible="true" enabled="true" locked="false">
+          <item id="di752375482686154152" iid="11ec9e5b1cb346559dee28c2e55d0f51" creation-date="06/19/2018 20:25:50" order-index="0" type="ui-titled-panel">
+            <layout ax="187" ay="29" awidth="913" aheight="475" x="187" y="29" width="913" height="475" />
+          </item>
+          <item id="di256511674631924097" iid="ae102433e6d345cebe63156f1712f513" container="di752375482686154152" container-iid="11ec9e5b1cb346559dee28c2e55d0f51" creation-date="06/19/2018 20:26:49" order-index="1" type="ui-area">
+            <layout ax="261" ay="89" awidth="764" aheight="232" x="261" y="89" width="764" height="232" />
+          </item>
+          <item id="" iid="c4e9d07871eb4d7b864f86a8da98ecd7" name="Element1" container="di752375482686154152" container-iid="11ec9e5b1cb346559dee28c2e55d0f51" creation-date="06/19/2018 20:27:23" order-index="2" type="drawing-line">
+            <layout ax="187" ay="350" awidth="914" aheight="1" x="187" y="350" width="914" height="1" />
+            <drawing-line start-point="187,381" end-point="1100,381" />
+            <style class="default" />
+          </item>
+          <item id="di752163190659903513" iid="632b44cf3d0744f3ac4632e123f3f629" name="Element5" container="di752375482686154152" container-iid="11ec9e5b1cb346559dee28c2e55d0f51" creation-date="06/19/2018 20:29:23" order-index="3" type="drawing-star">
+            <layout ax="413.5" ay="337" awidth="33" aheight="30" x="413.5" y="337" width="33" height="30" />
+            <drawing-star points="5" tip-size="0.5" />
+            <style class="default" />
+          </item>
+          <item id="di665082637530771850" iid="6b7e7ae42d014401a2f6d7beabc12793" name="Element5" container="di752375482686154152" container-iid="11ec9e5b1cb346559dee28c2e55d0f51" creation-date="06/19/2018 20:29:23" order-index="3" type="drawing-star">
+            <layout ax="251.5" ay="337" awidth="33" aheight="30" x="251.5" y="337" width="33" height="30" />
+            <drawing-star points="5" tip-size="0.5" />
+            <style class="default" />
+          </item>
+          <item id="di986463046347641410" iid="af57054af1284faeb1e96868d93e7e38" name="Element5" container="di752375482686154152" container-iid="11ec9e5b1cb346559dee28c2e55d0f51" creation-date="06/19/2018 20:29:23" order-index="3" type="drawing-star">
+            <layout ax="292" ay="337" awidth="33" aheight="30" x="292" y="337" width="33" height="30" />
+            <drawing-star points="5" tip-size="0.5" />
+            <style class="default" />
+          </item>
+          <item id="di719840429393170461" iid="b45f4ccd95134c019c0b0aa280ed34a7" name="Element5" container="di752375482686154152" container-iid="11ec9e5b1cb346559dee28c2e55d0f51" creation-date="06/19/2018 20:29:23" order-index="3" type="drawing-star">
+            <layout ax="332.5" ay="337" awidth="33" aheight="30" x="332.5" y="337" width="33" height="30" />
+            <drawing-star points="5" tip-size="0.5" />
+            <style class="default" />
+          </item>
+          <item id="di427836625916891128" iid="8e48ecfd0bb54d72af30e18c1c6759a9" name="Element5" container="di752375482686154152" container-iid="11ec9e5b1cb346559dee28c2e55d0f51" creation-date="06/19/2018 20:29:23" order-index="3" type="drawing-star">
+            <layout ax="373" ay="337" awidth="33" aheight="30" x="373" y="337" width="33" height="30" />
+            <drawing-star points="5" tip-size="0.5" />
+            <style class="default" />
+          </item>
+          <item id="di991682879226640521" iid="19fd24baf8cd4ab69cc251a1792fb548" container="di752375482686154152" container-iid="11ec9e5b1cb346559dee28c2e55d0f51" creation-date="06/19/2018 20:30:45" order-index="4" type="ui-text-box">
+            <layout ax="268" ay="395" awidth="376" aheight="20" x="268" y="395" width="376" height="20" />
+          </item>
+        </layer>
+      </diagram>
+    </model>
+  </models>
+</sim-project>
