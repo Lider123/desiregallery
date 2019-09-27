@@ -22,6 +22,6 @@ from django.views.generic.base import RedirectView
 urlpatterns = [
     path("", RedirectView.as_view(url="gallery/", permanent=False)),
     path('admin/', admin.site.urls),
-    path('gallery/', include("gallery.urls")),
+    path('gallery/', include("desiregallery.apps.gallery.urls")),
 ]
 urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)

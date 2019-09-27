@@ -1,4 +1,5 @@
-django
-django-dotenv
-pillow
-pymysql
+django==2.1.7
+django-dotenv==1.4.2
+mysqlclient==1.4.4
+pillow==5.4.1
+pymysql==0.9.3
