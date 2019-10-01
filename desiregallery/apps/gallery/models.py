@@ -1,5 +1,6 @@
 from django.db import models
 from django.utils.deconstruct import deconstructible
+from sorl.thumbnail import ImageField
 from uuid import uuid4
 import os
 
@@ -30,7 +31,7 @@ class Post(models.Model):
         verbose_name = "Пост"
         verbose_name_plural = "Посты"
 
-    image = models.ImageField(upload_to=UploadImage("content"), verbose_name="Изображение")
+    image = ImageField(upload_to=UploadImage("content"), verbose_name="Изображение")
     timestamp = models.DateTimeField(auto_now_add=True)
 
     def delete(self, *args, **kwargs):

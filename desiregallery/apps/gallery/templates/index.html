@@ -1,4 +1,5 @@
 {% load static %}
+{% load thumbnail %}
 <link rel="stylesheet" type="text/css" href="{% static '../static/gallery/style.css' %}">
 
 <!DOCTYPE html>
@@ -15,7 +16,16 @@
         <table>
             <tr>
                 {% for post in posts %}
-                    <td><a href="/gallery/post/{{ post.pk }}/">{{ post.timestamp }}</a></td>
+                    <td>
+                        <a href="/gallery/post/{{ post.pk }}/">
+                            <div>
+                                {% thumbnail post.image "300x300" as im %}
+                                    <img src="{{ im.url }}" width="{{ im.width }}" height="{{ im.height }}">
+                                {% endthumbnail %}
+                                <p>{{ post.timestamp }}</p>
+                            </div>
+                        </a>
+                    </td>
                     {% if forloop.counter|divisibleby:"4" and not forloop.last %}
                         </tr>
                         <tr>
