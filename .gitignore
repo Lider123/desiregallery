@@ -112,5 +112,3 @@ media/
 !**/migrations/__init__.py
 
 .idea/
-
-uploads/
