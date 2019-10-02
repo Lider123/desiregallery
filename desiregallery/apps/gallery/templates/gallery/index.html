@@ -1,6 +1,6 @@
 {% load static %}
+<link rel="stylesheet" type="text/css" href="{% static 'gallery/style.css' %}">
 {% load thumbnail %}
-<link rel="stylesheet" type="text/css" href="{% static '../static/gallery/style.css' %}">
 
 <!DOCTYPE html>
 <html lang="en">
@@ -9,9 +9,11 @@
         <title>DesireGallery :: Home</title>
     </head>
     <body>
+
     <div id="header">
         <h1><a href="/gallery">DesireGallery</a></h1>
     </div>
+
     <div id="main">
         <table>
             <tr>
@@ -20,7 +22,8 @@
                         <a href="/gallery/post/{{ post.pk }}/">
                             <div>
                                 {% thumbnail post.image "300x300" as im %}
-                                    <img src="{{ im.url }}" width="{{ im.width }}" height="{{ im.height }}">
+                                    <img src="{{ im.url }}" width="{{ im.width }}" height="{{ im.height }}"
+                                         alt="{{ post.timestamp }}">
                                 {% endthumbnail %}
                                 <p>{{ post.timestamp }}</p>
                             </div>
@@ -33,6 +36,25 @@
                 {% endfor %}
             </tr>
         </table>
+    </div>
+
+    <div class="pagination">
+        {% if posts.has_previous %}
+            <a href="?page=1">First</a>
+            <a href="?page={{ posts.previous_page_number }}">Previous</a>
+        {% endif %}
+
+        {% for num in posts.paginator.page_range %}
+            {% if posts.number == num %}
+                <span>{{ num }}</span>
+            {% elif num > posts.number|add:'-3' and num < posts.number|add:'3' %}
+                <a href="?page={{ num }}">{{ num }}</a>
+            {% endif %}
+        {% endfor %}
+
+        {% if posts.has_next %}
+            <a href="?page={{ posts.next_page_number }}">Next</a>
+        {% endif %}
     </div>
     </body>
 </html>
