@@ -3,15 +3,49 @@ table, td {
 }
 
 table {
+    border: 1px solid black;
     border-collapse: collapse;
     width: 100%;
 }
 
 td {
+    border: 1px solid black;
     text-align: center;
 }
 
 .pagination {
     padding: 50px 0;
     text-align: center;
+}
+
+#comments {
+    width: 600px;
+}
+
+#comment-form {
+    display: -webkit-flex;
+	display: flex;
+	-webkit-flex-direction: row;
+	flex-direction: row;
+}
+
+#comment-input {
+	width: 100%;
+}
+
+#comment {
+    background-color: #DDD;
+    border-radius: 8px 8px 8px 8px;
+    padding: 0 8px 0 8px;
+    width: 100%;
+}
+
+.timestamp {
+    color: #6499F5;
+    font-size: small;
+    padding-top: 4px;
+}
+
+#comment-text {
+    padding-bottom: 8px;
 }

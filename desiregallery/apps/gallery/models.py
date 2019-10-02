@@ -49,7 +49,7 @@ class Comment(models.Model):
 
     comment_text = models.CharField(max_length=200, verbose_name="Текст комментария")
     timestamp = models.DateTimeField(auto_now_add=True)
-    post_id = models.ForeignKey(Post, on_delete=models.CASCADE)
+    post = models.ForeignKey(Post, on_delete=models.CASCADE, related_name="comments")
 
 
 class Vote(models.Model):
@@ -59,4 +59,4 @@ class Vote(models.Model):
         verbose_name_plural = "Оценки"
 
     value = models.IntegerField(verbose_name="Значение")
-    post_id = models.ForeignKey(Post, on_delete=models.CASCADE)
+    post = models.ForeignKey(Post, on_delete=models.CASCADE, related_name="votes")
