@@ -1,0 +1,116 @@
+body {
+    background-color: #eedddd;
+    margin: 0;
+}
+
+header, footer {
+    background-color: #6200EA;
+}
+
+header {
+    padding: 20px;
+}
+
+footer {
+    text-align: center;
+    padding: 20px 0;
+    color: white;
+}
+
+aside {
+    height: 100%;
+    width: 160px;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    overflow-x: hidden;
+    padding-top: 20px;
+}
+
+main {
+    margin-left: 160px; /* Same as the width of the sidebar */
+    padding: 0 10px;
+}
+
+table, td {
+    border: 1px solid black;
+}
+
+table {
+    border: 1px solid black;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+td {
+    border: 1px solid black;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline;
+    color: #F40057;
+    margin-right: 10px;
+}
+
+nav ul li a:link {
+    color: #F40057;
+}
+
+nav ul li a:visited {
+    color: #F40057;
+}
+
+ul.links li {
+    color: green;
+}
+
+img.full {
+    padding: 10px;
+}
+
+.pagination {
+    padding: 50px 0;
+    text-align: center;
+}
+
+.comments-block {
+    width: 600px;
+    padding: 20px;
+}
+
+.comment-form {
+    display: -webkit-flex;
+	display: flex;
+	-webkit-flex-direction: row;
+	flex-direction: row;
+}
+
+.comment-input {
+	width: 100%;
+}
+
+.comment-item {
+    background-color: white;
+    border-radius: 8px 8px 8px 8px;
+    padding: 0 8px 0 8px;
+    width: 100%;
+}
+
+.comment-timestamp {
+    color: #6499F5;
+    font-size: small;
+    padding-top: 4px;
+}
+
+.comment-text {
+    padding-bottom: 8px;
+}
+
+.comment-form-submit {
+    margin-left: 10px;
+}
+
+.comment-form-dynamic {
+    width: 100%;
+}

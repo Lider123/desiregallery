@@ -1,0 +1,36 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>DesireGallery :: Post</title>
+    <meta charset="utf-8" />
+    <meta http-equiv="Cache-Control" content="no-store" />
+    <link rel="stylesheet" type="text/css" href="{% static 'gallery/css/style.css' %}">
+</head>
+<body>
+<header>
+    <a href="/gallery"><img src="{% static "gallery/img/logo_site.png" %}" alt="Desire Gallery" height="60px"/></a>
+    <nav>
+        <ul>
+            <li>&bull; <a href="#">My account</a></li>
+            <li>&bull; <a href="/gallery">Posts</a></li>
+            <li>&bull; <a href="#">Comments</a></li>
+        </ul>
+    </nav>
+</header>
+<aside>
+    <ul class="links">
+        <li>First link</li>
+        <li>Second link</li>
+        <li>Third link</li>
+    </ul>
+</aside>
+<main>
+    {% block content %}
+    {% endblock %}
+</main>
+<footer>
+    Created by lider
+</footer>
+</body>
+</html>

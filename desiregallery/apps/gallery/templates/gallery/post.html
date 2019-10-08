@@ -1,41 +1,23 @@
-{% load static %}
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <title>DesireGallery :: Post</title>
-    <meta charset="utf-8" />
-    <meta http-equiv="Cache-Control" content="no-store" />
-    <link rel="stylesheet" type="text/css" href="{% static 'gallery/style.css' %}">
-</head>
-<body>
+{% extends "gallery/base.html" %}
+{% block content %}
+    <section>
+        <img src="{{ post.image.url }}" alt="{{ post.image.name }}" class="full"/>
+    </section>
 
-<div id="header">
-    <h1><a href="/gallery">DesireGallery</a></h1>
-</div>
-
-<div id="leftmenu">
-
-</div>
-
-<div id="main">
-    <img src="{{ post.image.url }}" alt="{{ post.image.name }}" />
-
-    <div id="comments">
+    <section class="comments-block">
         <h1>Comments</h1>
-        <form method="POST" action="/gallery/post/{{ post.pk }}/" id="comment-form">
+        <form method="POST" action="/gallery/post/{{ post.pk }}/" class="comment-form">
             {% csrf_token %}
-            <span style="width: 100%;">{{ comment_form.as_p }}</span>
-            <input id="send-comment" type="submit" value="Send" style="margin-left: 10px"/>
+            <span class="comment-form-dynamic">{{ comment_form.as_p }}</span>
+            <input id="send-comment" type="submit" value="Send" class="comment-form-submit"/>
         </form>
         {% for comment in post.comments.all %}
-            <div id="comment">
-                <p class="timestamp">{{ comment.timestamp }}</p>
-                <p id="comment-text">{{ comment.comment_text }}</p>
+            <div class="comment-item">
+                <p class="comment-timestamp">{{ comment.timestamp }}</p>
+                <p class="comment-text">{{ comment.comment_text }}</p>
             </div>
         {% empty %}
             <p>There are no comments yet. Add the first one.</p>
         {% endfor %}
-    </div>
-</div>
-</body>
-</html>
+    </section>
+{% endblock %}

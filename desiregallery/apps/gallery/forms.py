@@ -13,6 +13,6 @@ class CommentForm(forms.ModelForm):
         widgets = {
             "comment_text": forms.TextInput(attrs={
                 "placeholder": "Add a comment",
-                "id": "comment-input",
+                "class": "comment-input",
             }),
         }
