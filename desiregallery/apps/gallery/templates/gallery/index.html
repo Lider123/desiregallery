@@ -1,19 +1,7 @@
-{% load static %}
+{% extends "gallery/base.html" %}
 {% load thumbnail %}
-<!DOCTYPE html>
-<html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <title>DesireGallery :: Home</title>
-        <link rel="stylesheet" type="text/css" href="{% static 'gallery/style.css' %}">
-    </head>
-    <body>
-
-    <div id="header">
-        <h1><a href="/gallery">DesireGallery</a></h1>
-    </div>
-
-    <div id="main">
+{% block content %}
+    <section>
         <table>
             <tr>
                 {% for post in posts %}
@@ -33,11 +21,11 @@
                         <tr>
                     {% endif %}
                 {% endfor %}
-            </tr>
+                </tr>
         </table>
-    </div>
+    </section>
 
-    <div class="pagination">
+    <section class="pagination">
         {% if posts.has_previous %}
             <a href="?page=1">First</a>
             <a href="?page={{ posts.previous_page_number }}">Previous</a>
@@ -54,6 +42,5 @@
         {% if posts.has_next %}
             <a href="?page={{ posts.next_page_number }}">Next</a>
         {% endif %}
-    </div>
-    </body>
-</html>
+    </section>
+{% endblock %}
