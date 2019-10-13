@@ -1,13 +1,15 @@
 {% extends "gallery/base.html" %}
 {% load crispy_forms_tags %}
+{% load humanize %}
 
 {% block title %}
     DesireGallery :: Post
 {% endblock %}
 
 {% block content %}
-    <section>
-        <img src="{{ post.image.url }}" alt="{{ post.image.name }}" class="full"/>
+    <section class="full_post">
+        <p>Loaded {{ post.timestamp|naturaltime }}</p>
+        <img src="{{ post.image.url }}" alt="{{ post.image.name }}"/>
     </section>
 
     <section class="comments-block">
