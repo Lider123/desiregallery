@@ -53,10 +53,17 @@ class Comment(models.Model):
 
 
 class Vote(models.Model):
+    __possible_ratings = (
+        (1, 'Poor'),
+        (2, 'Average'),
+        (3, 'Good'),
+        (4, 'Very Good'),
+        (5, 'Excellent')
+    )
 
     class Meta:
         verbose_name = "Оценка"
         verbose_name_plural = "Оценки"
 
-    value = models.IntegerField(verbose_name="Значение")
+    value = models.IntegerField(choices=__possible_ratings, default=1, verbose_name="Значение")
     post = models.ForeignKey(Post, on_delete=models.CASCADE, related_name="votes")
