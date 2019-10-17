@@ -5,7 +5,7 @@ from django.http import Http404
 from django.shortcuts import redirect, render, reverse
 from django.utils import timezone
 from .forms import CommentForm
-from .models import Post, Vote
+from .models import Post
 
 
 VotedPost = namedtuple("VotedPost", ["post", "avg_vote"])
@@ -14,14 +14,15 @@ VotedPost = namedtuple("VotedPost", ["post", "avg_vote"])
 
 
 def index(request):
-    post_list = Post.objects.all().order_by("-timestamp")
-    paginator = Paginator(post_list, 16)
+    posts = Post.objects.all().order_by("-timestamp")
+    votes = list(map(lambda p: p.votes.aggregate(Avg("value")), posts))
+    data = list(map(lambda z: VotedPost(z[0], z[1]["value__avg"] or 0.), zip(posts, votes)))
 
+    paginator = Paginator(data, 16)
     page = request.GET.get("page")
-    posts = paginator.get_page(page)
-    votes = list(map(lambda p: p.votes.aggregate(Avg("value")), posts.object_list))
+    data = paginator.get_page(page)
     return render(request, "gallery/index.html", {
-        "data": map(lambda z: VotedPost(z[0], z[1]["value__avg"] or 0.), zip(posts, votes))
+        "data_page": data,
     })
 
 
