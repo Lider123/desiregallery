@@ -1,20 +1,29 @@
+from collections import namedtuple
 from django.core.paginator import Paginator
+from django.db.models import Avg
 from django.http import Http404
 from django.shortcuts import redirect, render, reverse
 from django.utils import timezone
 from .forms import CommentForm
 from .models import Post
 
+
+VotedPost = namedtuple("VotedPost", ["post", "avg_vote"])
+
 # Create your views here.
 
 
 def index(request):
-    post_list = Post.objects.all().order_by("-timestamp")
-    paginator = Paginator(post_list, 16)
+    posts = Post.objects.all().order_by("-timestamp")
+    votes = list(map(lambda p: p.votes.aggregate(Avg("value")), posts))
+    data = list(map(lambda z: VotedPost(z[0], z[1]["value__avg"] or 0.), zip(posts, votes)))
 
+    paginator = Paginator(data, 16)
     page = request.GET.get("page")
-    posts = paginator.get_page(page)
-    return render(request, "gallery/index.html", {"posts": posts})
+    data = paginator.get_page(page)
+    return render(request, "gallery/index.html", {
+        "data_page": data,
+    })
 
 
 def post(request, post_id):
