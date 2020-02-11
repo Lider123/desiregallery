@@ -1,5 +1,5 @@
 cryptography==2.7
-django==2.1.11
+django==2.2.10
 django-crispy-forms==1.7.2
 django-dotenv==1.4.2
 mysqlclient==1.4.4
