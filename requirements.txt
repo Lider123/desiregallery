@@ -1,4 +1,4 @@
-cryptography==2.7
+cryptography==3.2
 django==2.1.11
 django-crispy-forms==1.7.2
 django-dotenv==1.4.2
